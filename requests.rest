@@ -1,0 +1,38 @@
+GET http://localhost:5000/post
+Authorization: permit eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGlubGluIiwiaWF0IjoxNTk0MDYzOTc2fQ.cKIsbTViR5_pQeGca9xkDVuRvTmO1JvWs66kggNU0Ak
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "pseudo" : "linlin",
+    "password": "123456",
+    "email" : "linlin@gmail.com"
+}
+
+###
+POST http://localhost:5000/users/register
+Content-Type: application/json
+
+{
+    "pseudo" : "linlin",
+    "password": "123456",
+    "email" : "linlin@gmail.com"
+}
+
+###
+
+POST http://localhost:5000/users/authentication
+Content-Type: application/json
+
+{
+    "pseudo" : "linlin",
+    "password": "123456",
+    "email" : "linlin@gmail.com"
+}
+
+###
+
+GET  http://localhost:5000/chat
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwc2V1ZG8iOiJsaW5saW4iLCJpYXQiOjE1OTQzMzA2NjksImV4cCI6MTU5NDMzNDI2OX0.v-E0hx6WvcG1WdP2u1aJJ0nENJu6SI-L0RBWZeP-W7Q
