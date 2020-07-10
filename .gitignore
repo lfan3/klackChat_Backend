@@ -1,4 +1,4 @@
-./node_modules
-./config
-./documentation.md
-./requests.rest 
+node_modules
+config
+documentation.md
+requests.rest 
